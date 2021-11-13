@@ -1,0 +1,257 @@
+:root {
+    --fontHeading: 'PT Sans', sans-serif;
+    --fontParrafs: 'Open Sans', sans-serif;
+
+    --primari: #784D3C;
+    --clar:#e1e1e1;
+    --blanc:#ffffff;
+    --negre:#000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fontParrafs);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/** Globals **/
+.contenidor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fontHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/** Utilitats **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-text {
+    text-align: center;
+}
+/** Header **/
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+.no-webp, .header {
+    background-image: url(../img/banner.jpg);
+}
+.header {
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__text {
+    text-align: center;
+    color: var(--blanc);
+    margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .header__text {
+        margin-top: 15rem;
+    }
+}
+.barra {
+    padding-top: 4rem;
+}
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo {
+    color: var(--blanc);
+}
+.logo__nom {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+}
+.navegacio__enllac {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanc);
+}
+.navegacio__enllac:hover{
+    color: coral;
+}
+@media (min-width: 768px) {
+    .navegacio {
+        display: flex;
+    }
+    .navegacio__enllac {
+        margin-right: 2rem;
+    }
+    .navegacio__enllac:last-of-type {
+        margin-right: 0;
+    }
+}
+@media (min-width: 768px) {
+    .contingut-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+.entrada {
+    border-bottom: 1px solid var(--clar);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.boto {
+    display: block;
+    font-family: var(--fontHeading);
+    color: var(--blanc);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+.boto:hover {
+    color: coral;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .boto {
+        display: inline-block;
+    }
+}
+.boto--primari {
+    background-color: var(--negre);
+}
+.boto--secundari {
+    background-color: var(--primari);
+}
+.cursos {
+    list-style: none;
+}
+.widget-curs{
+    border-bottom: 1px solid var(--clar);
+    margin-bottom: 2rem;
+}
+.widget-curs:last-of-type {
+    border:none;
+    margin-bottom: 0;
+}
+.widget-curs__label {
+    font-family: var(--fontHeading);
+    font-weight: bold;
+}
+.widget-curs__info {
+    font-weight: normal;
+}
+.widget-curs__info, .widget-curs__label {
+    font-size: 2rem;
+}
+/** Footer **/
+.footer {
+    background-color: var(--negre);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+/** Sobre Nosaltres **/
+@media (min-width: 768px) {
+    .sobre-nosaltres{
+        display: flex;
+    }
+    .sobre-nosaltres__imatge {
+        margin-right: 2rem;
+    }
+    .sobre-nosaltres__text {
+        margin-right: 0;
+    }
+}
+/** Curs **/
+.curs {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--clar);
+}
+@media (min-width: 768px) {
+    .curs {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.curs:last-of-type {
+    border:none;
+}
+.curs__label {
+    font-family: var(--fontHeading);
+    font-weight: bold;
+}
+.curs__info {
+    font-weight: normal;
+}
+.curs__info, .curs__label {
+    font-size: 2rem;
+}
+/** Contacte **/
+.contacte-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formulari {
+    background-color: var(--blanc);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.camp {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.camp__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.camp__field {
+    flex: 1;
+    border: 1px solid var(--clar);
+}
+.camp__field--textarea {
+    height: 20rem;
+}

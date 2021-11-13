@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pàgina web de blog de cafè">
+    <title>BlogDeCafe</title>
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosaltres.html" as="document">
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" as="font" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenidor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nom no-margin centrar-text">Blog<span class="logo__bold">DeCafè</span></h1>
+                </a>
+                <nav class="navegacio">
+                    <a href="nosaltres.html" class="navegacio__enllac">Nosaltres</a>
+                    <a href="cursos.html" class="navegacio__enllac">Cursos</a>
+                    <a href="contacte.html" class="navegacio__enllac">Contacte</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__text">
+            <h2 class="no-margin">Blog de cafè amb consells i cursos</h2>
+            <p class="no-margin">Aprèn dels experts amb les millors receptes i consells</p>
+        </div>
+    </header>
+    <div class="contenidor contingut-principal">
+        <main class="blog">
+            <h3>El Nostre Blog</h3>
+
+            <article class="entrada">
+                <div class="entrada__imatge">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imatge blog"> 
+                    </picture>
+                </div>
+                <div class="entrada__contingut">
+                    <h4 class="no-margin">Tipus de Grans de Cafè</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima a deleniti laboriosam ducimus, ex vitae consequatur 
+                        deserunt voluptate mollitia eveniet magnam excepturi laborum quia illo ab. Adipisci, alias? Rem, ipsam.
+                    </p>
+                    <a href="entrada.html" class="boto boto--primari">Llegir Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imatge">
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imatge blog"> 
+                    </picture>
+                </div>
+                <div class="entrada__contingut">
+                    <h4 class="no-margin">Tres Delicioses Receptes de Cafè</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima a deleniti laboriosam ducimus, ex vitae consequatur 
+                    deserunt voluptate mollitia eveniet magnam excepturi laborum quia illo ab. Adipisci, alias? Rem, ipsam.
+                    </p>
+                    <a href="entrada.html" class="boto boto--primari">Llegir Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imatge">
+                    <picture>
+                        <source srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imatge blog"> 
+                    </picture>
+                </div>
+                <div class="entrada__contingut">
+                    <h4 class="no-margin">Beneficis del Cafè</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima a deleniti laboriosam ducimus, ex vitae consequatur 
+                        deserunt voluptate mollitia eveniet magnam excepturi laborum quia illo ab. Adipisci, alias? Rem, ipsam.
+                    </p>
+                    <a href="entrada.html" class="boto boto--primari">Llegir Entrada</a>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Els Nostres Cursos i Tallers</h3>
+            <ul class="cursos no-padding">
+                <li class="widget-curs">
+                    <h4 class="no-margin">Tècniques d'Extracció de Cafè</h4>
+                    <p class="widget-curs__label">Preu: <span class="widget-curs__info">Gratis</span></p>
+                    <p class="widget-curs__label">Cup: <span class="widget-curs__info">20</span></p>
+                    <a href="entrada.html" class="boto boto--secundari">Més Informació sobre els nostres cursos</a>
+                </li>
+
+                <li class="widget-curs">
+                    <h4 class="no-margin">Quatre Receptes de Cafè per a Principiants</h4>
+                    <p class="widget-curs__label">Preu: <span class="widget-curs__info">Gratis</span></p>
+                    <p class="widget-curs__label">Cup: <span class="widget-curs__info">20</span></p>
+                    <a href="entrada.html" class="boto boto--secundari">Més Informació</a>
+                </li>
+
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenidor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nom no-margin centrar-text">Blog<span class="logo__bold">DeCafè</span></h1>
+                </a>
+                <nav class="navegacio">
+                    <a href="nosaltres.html" class="navegacio__enllac">Nosaltres</a>
+                    <a href="cursos.html" class="navegacio__enllac">Cursos</a>
+                    <a href="contacte.html" class="navegacio__enllac">Contacte</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
